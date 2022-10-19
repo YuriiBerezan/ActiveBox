@@ -88,7 +88,7 @@ p
     justify-content: center ;
     height: 750px;
     padding-top: 100px;
-    background: #31344e url("/img/LayerIntro.jpg") ;
+    background: #31344e url("../img/LayerIntro.jpg") ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
