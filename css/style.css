@@ -45,6 +45,21 @@ p
     z-index: 1000;
     height: 100px;
 }
+
+.header.fixed 
+{
+    height: auto;
+    position: fixed;
+    background-color: #31344e;
+}
+
+.header.fixed .header__inner 
+{
+padding-bottom: 15px;
+padding-top: 15px;
+border-bottom: 0;
+}
+
 .header__inner
 {
     display: flex;
