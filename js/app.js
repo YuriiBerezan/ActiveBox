@@ -3,6 +3,9 @@ $(function () {
     let intro = $("#intro");
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
+    let nav = $("#nav");
+    let navToggle = $("#navToggle");
+
 
     checkScroll(scrollPos, introH)
 
@@ -30,6 +33,7 @@ $(function () {
         let elemntId = $(this).data('scroll');
 
         let elementOffset = $(elemntId).offset().top;
+        nav.removeClass("show");
         console.log(elementOffset);
 
         $("html , body").animate({
@@ -37,7 +41,25 @@ $(function () {
         }, 700);
 
     });
-   
     
+
+    navToggle.on("click", function (event) {
+        event.preventDefault();
+        nav.toggleClass("show");
+    });
+
+
+
+    let slider = $("#rewiewsSlider");
+
+    
+    slider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true, 
+    arrows:false, 
+    dots:true
+    });
 
 });
